@@ -1,1 +1,8 @@
 /* CSS declarations go here */
+
+.upvotes {
+color:green;
+}
+.downvotes{
+color:red;
+}

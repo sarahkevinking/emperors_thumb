@@ -4,17 +4,12 @@
 
 <body>
   {{> hello}}
-  {{> voting }}
 </body>
 
 
 <template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
-</template>
-
-<template name="voting">
-<h1> VOTE HERE</h1>
-<input type="button" value="Good" />
+  <h1 class="upvotes">Upvotes: 0</h1>
+  <h1 class="downvotes">Downvotes: 0</h1><a>
+  <input class="upvote"type="button" value="Vote Up!">
+  <input class="downvote"type="button" value="Vote Down!">
 </template>

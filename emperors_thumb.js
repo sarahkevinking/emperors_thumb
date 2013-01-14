@@ -1,20 +1,21 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "This is a way better greeting.";
-  };
-
-  Template.hello.events({
-    'click input' : function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("Oh lawd the button is pressed");
-    }
-  });
-
+    Template.hello.greeting = function () {
+        return "This is a way better greeting.";
+    };
+    Template.hello.events({
+        'click .downvote' : function () {
+            console.log("downvote");
+        }
+    })
+    Template.hello.events({
+        'click .upvote' : function () {
+            console.log("upvote");
+        }
+    })
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
+    Meteor.startup(function () {
+        // code to run on server at startup
+    });
 }
