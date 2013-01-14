@@ -10,6 +10,7 @@ if (Meteor.isClient) {
         console.log("Oh lawd the button is pressed");
     }
   });
+
 }
 
 if (Meteor.isServer) {
