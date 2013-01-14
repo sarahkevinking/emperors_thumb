@@ -8,8 +8,13 @@
 
 
 <template name="hello">
-  <h1 class="upvotes">Upvotes: 0</h1>
-  <h1 class="downvotes">Downvotes: 0</h1><a>
+  {{#each pvs }}
+    {{> pollice_versos}}
+  {{/each}}
   <input class="upvote"type="button" value="Vote Up!">
   <input class="downvote"type="button" value="Vote Down!">
+</template>
+
+<template name="pollice_versos">
+  <h1 class="score">Overall Rating: {{score}}</h1>
 </template>

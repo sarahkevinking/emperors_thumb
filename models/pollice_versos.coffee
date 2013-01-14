@@ -15,4 +15,6 @@ Meteor.methods(
         else
             verso = versos[0]
         return verso
+    update_verso: (verso_id, value) ->
+        PolliceVersos.update( {pollice_verso_id : verso_id}, {$inc : { score : value }} )
 )
